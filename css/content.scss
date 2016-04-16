@@ -1,0 +1,72 @@
+.content {
+	margin: 64px 0 0 0;
+}
+
+.content .container .content-features {
+	padding: 0;
+}
+
+.content .container .content-block {
+	padding: 1em;
+	border-left: 6px solid #dedede;
+	border-bottom: 1px solid #dedede;
+}
+
+.content .container .content-block-title {
+	font-family: 'Montserrat';
+}
+
+.content .container .content-block:hover {
+	background-color: #dedede;
+}
+
+.content .container .content-block:nth-child(1) {
+	border-left-color: #008000;
+}
+
+.content .container .content-block:nth-child(2) {
+	border-left-color: #f00;
+}
+
+.content .container .content-block:nth-child(3) {
+	border-left-color: #00f;
+}
+
+.content .container .content-block:nth-child(4) {
+	border-left-color: #ffa500;
+}
+
+.content-text-image .container picture {
+	margin: 0 auto;
+}
+
+.content-text-image .container picture img {
+	width: 100%;
+}
+
+@media (min-width: 786px) {
+	.container {
+		width: 768px;
+		margin: 0 auto;
+	}
+
+	.content-features .container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.content-text-image .container {
+		display: flex;
+	}
+
+	.content-text-image .container picture {
+		margin: 1em;
+		order: 1;
+		width: 30%;
+	}
+
+	.content-text-image .container p {
+		order: 2;
+		width: 70%;
+	}
+}
