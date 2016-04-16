@@ -24,7 +24,7 @@ gulp.task('browser-sync', function() {
 					'**/*.{png,jpg,gif}'
 				];
 	browserSync.init(files, {
-		proxy: url,
+    server: true,
 		injectChanges: true
 	});
 });
