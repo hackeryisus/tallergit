@@ -1,0 +1,34 @@
+{
+  "name": "astrokosmos",
+  "version": "1.0.0",
+  "description": "Tema de wordpress para Astrokosmos.com.mx",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jemandez/astrokosmos.git"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "ecommerce",
+    "page"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jemandez/astrokosmos/issues"
+  },
+  "homepage": "https://github.com/jemandez/astrokosmos#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssnano": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-webserver": "^0.9.1",
+  }
+}
