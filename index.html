@@ -1,13 +1,103 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Taller git</title>
-  </head>
-  <body>
-    <h1>Taller git</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Página</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript">
+    document.addEventListener( "DOMContentLoaded", function(){
+      var btnMenu = document.getElementById('btnMenu');
+      var navbarMenu = document.getElementById('navbarMenu');
+
+      btnMenu.addEventListener('click', onClickMenu);
+
+      function onClickMenu() {
+          navbarMenu.classList.toggle('header-menu-list--show');
+      }
+    });
+  </script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-mobile">
+      <h1 class="header-logo">De 0 a 100 en Git y Github</h1>
+      <button id="btnMenu" class="header-btn-nav">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+
+    <nav class="header-menu-navbar">
+      <ul id="navbarMenu" class="header-menu-list">
+        <li class="header-menu-list-item">
+          <a href="#">Inicio</a>
+        </li>
+        <li class="header-menu-list-item">
+          <a href="#">Acerca de</a>
+        </li>
+        <li class="header-menu-list-item">
+          <a href="#">Blog</a>
+        </li>
+        <li class="header-menu-list-item">
+          <a href="#">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <article class="content">
+
+    <section class="content-text">
+      <div class="container">
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/YiiXKoLYLMo"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-features">
+      <div class="container">
+        <div class="content-block">
+          <h3 class="content-block-title">Feature 1</h3>
+          <p>Lorem Ipsum</p>
+        </div>
+        <div class="content-block">
+          <h3 class="content-block-title">Feature 2</h3>
+          <p>Lorem Ipsum</p>
+        </div>
+        <div class="content-block">
+          <h3 class="content-block-title">Feature 3</h3>
+          <p>Lorem Ipsum</p>
+        </div>
+        <div class="content-block">
+          <h3 class="content-block-title">Feature 4</h3>
+          <p>Lorem Ipsum</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-text content-text-image">
+      <div class="container">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/img01-desktop.jpg">
+          <source media="(min-width: 320px)" srcset="img/img01-mobile-retina.jpg 2x">
+          <img src="img/img01-mobile.jpg" alt="">
+        </picture>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+    </section>
+
+  </article>
+
+</body>
 </html>
