@@ -47,7 +47,7 @@ gulp.task('build:css', function(){
     discardComments: {removeAll: false}
   }))
   .pipe(reload({stream:true}))
-  .pipe(rename('style.css'))
+  .pipe(rename('style.min.css'))
   .pipe(gulp.dest(config.styles.output))
   .pipe(reload({stream:true}));
 });
