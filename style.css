@@ -1027,7 +1027,7 @@ a {
 
 .header {
   font-family: "Open Sans", Helvetica, sans-serif;
-  background-color: #333;
+  background-color: #bb8;
   color: #fff;
   height: 64px;
   width: 100%;
@@ -1062,13 +1062,13 @@ a {
     -ms-flex-order: 2;
     order: 2;
     border: 0;
-    border-radius: 0.4em;
-    background-color: #333;
-    color: #fff;
+    border-radius: 0.8em;
+    background-color: #bb8;
+    color: #888;
     padding: 0;
     margin: 1em; }
   .header-menu-navbar {
-    background-color: #333; }
+    background-color: #bb8; }
   .header-menu-list {
     list-style-type: none;
     height: 0;
